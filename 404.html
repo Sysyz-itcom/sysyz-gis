@@ -123,17 +123,14 @@
 <body>
 	<div class="main_box">
 		<div class="title">
-			404
+			Error
 			<div class="line"></div>
 		</div>
 		<div class="subtitle" id="subtitle">
-			Not Found
+			Unknown Error
 		</div>
 		<div class="desc" id="desc">
-			您遇到了404错误。它意味着您所访问的资源在服务器上不存在。<br>
-		</div>
-		<div class="btn" onclick="window.location.href='https\://sysyz-itcom.github.io/sysyz-gis/service';">
-			<a href="https://sysyz-itcom.github.io/sysyz-gis/service" class="return" id="link">返回主页</a>
+			未知错误，请重试。<br>
 		</div>
 	</div>
 	<script>
@@ -141,9 +138,9 @@
 		lang = navigator.language;
 		if (lang == "en" || lang.toLowerCase == "en-us") {
 			document.getElementById("desc").innerHTML =`
-                You encountered a 404 error. It means that the resource you are accessing does not exist on the server. <br>
+                Unknown Error.<br>
                 document.getElementById("subtitle").innerHTML="Page Not Found";
-                document.title="404 Not Found";
+                document.title="Error";
                 document.getElementById("link").innerHTML="Back to home";
             }
 	</script>
